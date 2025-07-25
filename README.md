@@ -1,20 +1,74 @@
-# product-inventory-frontend
+## Product Inventory System – Frontend (React.js)
 
-This project is the frontend for the Product Inventory application, built with **React** and **Vite**.
-
-## Project Info
-
-This setup provides a minimal configuration to get React running with Vite, Hot Module Replacement (HMR), and ESLint.
-
-### Vite Plugins Used
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) – uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) – uses [SWC](https://swc.rs/) for Fast Refresh
-
-### Expanding the ESLint Configuration
-
-For production apps, we recommend using TypeScript with type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) and [`typescript-eslint`](https://typescript-eslint.io).
+This is the **frontend** part of the full-stack Product Inventory System built using **React.js**.  
+It communicates with the Django REST API to manage products, stock, and transaction reports.
 
 ---
 
-> Frontend for: https://github.com/abhinandbhaskar/product-inventory-backend
+## Features
+
+### Product Management
+- Create a new product with dynamic variants and sub-variants
+- Real-time form validation and structured JSON data submission
+
+### Product Listing
+- Displays all available products and their variant combinations
+- Shows stock availability per variant
+
+###  Stock Management
+- Add stock (purchase) or remove stock (sale) for specific variants
+- Validations to avoid overselling or negative stock
+
+### Stock Reports
+- View all stock in/out transactions
+- Filter transactions using a date range
+- Displays quantity, product, variant, date, and transaction type
+
+### UI/UX
+- Clean, responsive layout (Tailwind CSS)
+- User-friendly forms and buttons
+
+---
+
+## 🛠️ Tech Stack
+
+| Purpose     | Tech         |
+|-------------|--------------|
+| Frontend    | React.js     |
+| HTTP Client | Axios        |
+| Styling     | Tailwind CSS |
+| Auth        | JWT Token auth |
+
+---
+
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/abhinandbhaskar/product-inventory-frontend.git
+cd product-inventory-frontend
+cd tailwindcss4
+
+### 2. Install Dependencies
+
+npm install
+
+### 3. Run the Frontend Dev Server
+
+npm run dev
+Default frontend runs at:
+🖥️ http://localhost:5173/
+
+Default backend runs at:
+
+http://127.0.0.1:8000/
+
+
+### Credits & References
+React.js Documentation
+Axios
+Tailwind CSS
+ChatGPT – used for assistance
+
